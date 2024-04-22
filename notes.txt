@@ -1,0 +1,227 @@
+<!-- heading -->
+<div class="container-fluid text-center header-box shadow">
+  <h1 id="title">DOM Manipulation With Form</h1>
+  <p id="description">Created Form Using DOM Method In JavaScript</p>
+</div>
+<!-- form -->
+<form class="container mt-1 form-box" id="form">
+  <!-- firstname lastname -->
+
+  <div class="row col">
+    <label for="first-name" class="col-form-label col-auto"
+      >First Name :</label
+    >
+    <div class="col ps-0">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Your First Name"
+        id="first-name"
+        aria-describedby="inputTextInlineHelp"
+      />
+      <small>error msg</small>
+    </div>
+
+    <label for="last-name" class="col-form-label col-auto"
+      >Last Name :</label
+    >
+    <div class="col ps-0">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Your Last Name"
+        id="last-name"
+        aria-describedby="inputTextInlineHelp"
+      />
+      <small>error msg</small>
+    </div>
+  </div>
+
+  <!-- address -->
+  <div class="row col mt-4">
+    <label for="address" class="col-form-label col-auto pb-0"
+      >Address Line :</label
+    >
+    <div class="col ps-0 pb-0">
+      <textarea
+        type="text"
+        class="form-control"
+        id="address"
+        placeholder="Enter Your Address"
+      ></textarea>
+      <small>error msg</small>
+    </div>
+  </div>
+  <!-- gender -->
+  <div class="row mt-4">
+    <div class="col-auto">
+      <label for="genderLabel" class="col-form-label">Gender :</label>
+    </div>
+    <div class="col ps-0 d-flex pt-2">
+      <div class="form-check form-check-inline pe-2">
+        <input
+          type="radio"
+          class="form-check-input"
+          name="radio"
+          id="radio1"
+        />
+
+        <label class="form-check-label" for="radio1">Male</label>
+      </div>
+      <div class="form-check form-check-inline pe-2">
+        <input
+          type="radio"
+          class="form-check-input"
+          name="radio"
+          id="radioI2"
+        />
+
+        <label class="form-check-label" for="radio2">Female</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          type="radio"
+          class="form-check-input"
+          name="radio"
+          id="radio3"
+        />
+
+        <label class="form-check-label" for="radio3">Other</label>
+      </div>
+      <small>error msg</small>
+    </div>
+  </div>
+  <!-- choice of food -->
+  <div class="row mt-4">
+    <div class="col-auto">
+      <label for="foodLabel" class="col-form-label">Choice Of Food :</label>
+    </div>
+    <div class="col ps-0 d-flex pt-2">
+      <div class="form-check form-check-inline">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="checkInline1"
+          value="Idli"
+        />
+        <label class="form-check-label me-3" for="checkInline1">Idli</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="checkInline2"
+          value="Dosai"
+        />
+        <label class="form-check-label me-3" for="checkInline2"
+          >Dosai</label
+        >
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="checkInline3"
+          value="Pongal"
+        />
+        <label class="form-check-label me-3" for="checkInline3"
+          >Pongal</label
+        >
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="checkInline4"
+          value="Poori"
+        />
+        <label class="form-check-label me-3" for="checkInline4"
+          >Poori</label
+        >
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="checkInline5"
+          value="Appam"
+        />
+        <label class="form-check-label me-1" for="checkInline5"
+          >Appam</label
+        >
+      </div>
+      <small>error msg</small>
+    </div>
+  </div>
+  <!-- country,state,pincode -->
+  <div class="row mt-4">
+    <div class="row col">
+      <label for="countryId" class="col-form-label col-auto"
+        >Country :</label
+      >
+      <div class="col ps-0">
+        <select
+          class="form-select form-select-md col"
+          name="country"
+          aria-label="Small select"
+          id="countryId"
+        >
+          
+        </select>
+        <small>error msg</small>
+      </div>
+    </div>
+    <div class="row col">
+      <label for="stateId" class="col-form-label col-auto">State :</label>
+      <div class="col ps-0">
+        <select
+          class="form-select form-select-md col"
+          name="state"
+          aria-label="Small select"
+          id="stateId"
+        >
+          
+        </select>
+        <small>error msg</small>
+      </div>
+    </div>
+    <div class="row col">
+      <label for="pincode" class="col-form-label col-auto">Pincode :</label>
+      <div class="col ps-0">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Your Pincode"
+          id="pincode"
+        />
+        <small>error msg</small>
+      </div>
+    </div>
+  </div>
+  <!-- submit -->
+  <div class="d-flex justify-content-end mt-4">
+    <input
+      type="submit"
+      class="btn btn-lg btn-primary ms-3"
+      value="Submit"
+      id="submit"
+    />
+  </div>
+</form>
+<!-- table -->
+<table
+  class="table table-bordered border-primary container mt-5"
+  id="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Gender</th>
+      <th scope="col">favorite Food</th>
+      <th scope="col">Country</th>
+      <th scope="col">State</th>
+      <th scope="col">Pincode</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>

@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(200, 218, 253) !important;
+}
+
+#description {
+  font-size: 1.2rem;
+}
+
+.form-box {
+  padding: 5rem 0 0 0;
+}
+
+.header-box {
+  background-color: rgb(111, 157, 248) !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+label {
+  font-weight: 500;
+}
+
+.tableLink {
+  color: white;
+  text-decoration: none;
+}
+
+small {
+  display: block;
+  color: red;
+  visibility: hidden;
+}
+
+.form-div.success input {
+  border: 1.5px solid green !important;
+}
+.form-div.success textarea {
+  border: 1.5px solid green !important;
+}
+.form-div.error input {
+  border: 1.5px solid red !important;
+}
+.form-div.error textarea {
+  border: 1.5px solid red !important;
+}
+
+.form-div.error select {
+  border: 1.5px solid red !important;
+}
+
+.form-div.success select {
+  border: 1.5px solid green !important;
+}
+
+.form-div.error small {
+  visibility: visible;
+}
